@@ -13,6 +13,7 @@ Real-time AI coaching platform for B2B insurance sales. 12 specialized agents de
 
 - **Landing page:** [portal-three-rose.vercel.app](https://portal-three-rose.vercel.app)
 - **Chrome extension:** [Chrome Web Store →](https://chromewebstore.google.com/detail/sales-coach/oeleifakfnkihkkbeaabgibdoeknnilp)
+- **Status:** Public beta, validating with early-access agencies
 - Source: proprietary — commercial product
 
 #### Live shots from a real Medicare enrollment session
