@@ -11,8 +11,8 @@ We design and ship multi-agent AI infrastructure where it matters most: producti
 ### Sales Coach
 Real-time AI coaching platform for B2B insurance sales. 12 specialized agents deliver sub-800ms coaching cues during live calls — compliance alerts, objection handling, plan matching, and tonality feedback. Self-healing portal integration via three-layer extraction (CDP network interception → accessibility tree → vision-language model fallback).
 
-- **Try it:** [Chrome Web Store →](https://chromewebstore.google.com/detail/sales-coach/oeleifakfnkihkkbeaabgibdoeknnilp)
-- **Sign up:** [portal-three-rose.vercel.app/signup](https://portal-three-rose.vercel.app/signup)
+- **Landing page:** [portal-three-rose.vercel.app](https://portal-three-rose.vercel.app)
+- **Chrome extension:** [Chrome Web Store →](https://chromewebstore.google.com/detail/sales-coach/oeleifakfnkihkkbeaabgibdoeknnilp)
 - Source: proprietary — commercial product
 
 ### Axum Labs Trading Platform
