@@ -15,6 +15,31 @@ Real-time AI coaching platform for B2B insurance sales. 12 specialized agents de
 - **Chrome extension:** [Chrome Web Store →](https://chromewebstore.google.com/detail/sales-coach/oeleifakfnkihkkbeaabgibdoeknnilp)
 - Source: proprietary — commercial product
 
+#### Live shots from a real Medicare enrollment session
+
+<img src="./screenshots/sidebar.png" alt="Sales Coach sidepanel live during a SunFire enrollment call — ENROLLMENT, SCRIPT, NOTES, PLAN MATCH, RESEARCH, ANCILLARY, REBUTTALS, TONALITY, COMPLIANCE" />
+
+<sub>**Full coaching sidepanel** — Sales Coach v1.6.0 docked next to SunFire's Medicare enrollment portal. Nine specialized cards (Enrollment, Script, Notes, Plan Match, Research, Ancillary, Rebuttals, Tonality, Compliance) update in real time during the call.</sub>
+
+<table>
+  <tr>
+    <td width="50%"><img src="./screenshots/card-in-action.png" alt="Automation Lab agent controls — Interview / Pick / Send / Approve / Deny on a Medicare portal" /></td>
+    <td width="50%"><img src="./screenshots/live-script.png" alt="Live script with phase tracking — OPENER, PROBLEM, PRESENTATION, AGITATION, QUALITY — and verbatim opener line" /></td>
+  </tr>
+  <tr>
+    <td align="center"><sub><b>Automation Lab</b> — agent-driven actions on a live carrier portal. Interview, Pick, Send, Approve, Deny, Capture, Save as Workflow.</sub></td>
+    <td align="center"><sub><b>Live script</b> with phase tracking. Opener → Problem → Presentation → Agitation → Quality. Verbatim opener rendered for the agent to read.</sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="./screenshots/interview-mode.png" alt="Interview Mode — agent-led multi-choice questions for workflow configuration" /></td>
+    <td width="50%"><img src="./screenshots/carrier-portal.png" alt="SunFire Medicare portal with Sales Coach debugging banner" /></td>
+  </tr>
+  <tr>
+    <td align="center"><sub><b>Interview Mode</b> — agent-led multi-choice prompts replace freeform instructions. The agent asks structured questions to configure each new portal workflow.</sub></td>
+    <td align="center"><sub><b>Carrier portal integration</b> — the <code>"Sales Coach" started debugging this browser</code> banner confirms live CDP-level network interception on the Medicare enrollment portal.</sub></td>
+  </tr>
+</table>
+
 ### Axum Labs Trading Platform
 Autonomous quantitative trading infrastructure. Full Rust + Python stack with multi-agent strategy evolution, alternative-data pipelines (satellite imagery, AIS shipping, regime / sentiment classification), and Nomad-orchestrated deployment. 30+ MCP servers and 15+ specialized agents.
 
@@ -59,7 +84,7 @@ The reusable building blocks underneath the products above. All original work, a
 
 ## Contact
 
-Norman Beckford — Licensed Medicare Agent, self-taught developer since 2018, building with LLMs since 2022.
+Norman Beckford — Licensed Medicare Agent who taught himself to build the software his industry wouldn't. Started learning to code in 2018, building on LLMs since 2022.
 
 - norman@axumquant.com
 - [linkedin.com/in/norman-beckford-832711218](https://linkedin.com/in/norman-beckford-832711218)
