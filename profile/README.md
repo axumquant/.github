@@ -86,5 +86,5 @@ The reusable building blocks underneath the products above. All original work, a
 
 Norman Beckford — Licensed Medicare Agent who taught himself to build the software his industry wouldn't. Started learning to code in 2018, building on LLMs since 2022.
 
-- norman@axumquant.com
+- n.beck10010@gmail.com
 - [linkedin.com/in/norman-beckford-832711218](https://linkedin.com/in/norman-beckford-832711218)
