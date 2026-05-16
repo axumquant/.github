@@ -17,6 +17,9 @@ Real-time AI coaching platform for B2B insurance sales. 12 specialized agents de
 - [Chrome Web Store](https://chromewebstore.google.com/detail/sales-coach/oeleifakfnkihkkbeaabgibdoeknnilp)
 - [Agency portal](https://portal-three-rose.vercel.app/signup)
 
+### Axum Labs Studio
+Autonomous AI web agency platform. A coordinated agent swarm takes a client brief and delivers a deployed, monitored website end-to-end. Intake agent extracts brand guidelines, browser operator generates designs via headless Playwright, copywriter QA enforces tone, debug engineer validates in sandbox, and MCP deployer ships to Shopify or Wix through a Rust gateway. Four-tiered memory (Postgres, Redis, Mem0/Qdrant, Neo4j) ensures agents learn from every engagement.
+
 ---
 
 ## Featured Repositories
@@ -24,7 +27,7 @@ Real-time AI coaching platform for B2B insurance sales. 12 specialized agents de
 | Repo | What it is |
 |---|---|
 | [**sales-coach**](https://github.com/axumquant/sales-coach) | Real-time AI coaching platform — 12-agent orchestrator, FastAPI, Chrome extension, Windows tray client |
-| [**axum-labs-studio**](https://github.com/axumquant/axum-labs-studio) | Agency admin portal for Sales Coach — billing, analytics, knowledge-base ingestion, white-label |
+| [**axum-labs-studio**](https://github.com/axumquant/axum-labs-studio) | Autonomous AI web agency — agent swarm (intake, design, QA, deploy) with Rust MCP gateway, four-tiered memory, Shopify/Wix delivery |
 | [**site-mapper-agents**](https://github.com/axumquant/site-mapper-agents) | LLM-driven self-healing API discovery — Pydantic AI agents (Architect, Eavesdropper, Healer) adapt to schema changes |
 | [**arch-viewer**](https://github.com/axumquant/arch-viewer) | MCP-native codebase analysis — interactive architecture diagrams, Neo4j knowledge graph, 17 Claude Code tools |
 | [**cdp-network-interceptor**](https://github.com/axumquant/cdp-network-interceptor) | Chrome DevTools Protocol network capture for MV3 extensions — PII redaction, iframe auto-attach, stale-debugger recovery |
