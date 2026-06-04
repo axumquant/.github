@@ -11,16 +11,16 @@ We design and ship multi-agent AI infrastructure where it matters most: producti
 ### Sales Coach
 Real-time AI coaching platform for B2B insurance sales. **13 specialized agents** deliver live coaching cues — compliance & SOA disclosure tracking, objection handling, plan matching, research, and tonality feedback — under a **sub-800ms end-to-end latency budget**. Self-healing carrier-portal integration: a three-layer perception stack (**CDP network interception → DOM/selector mapping → vision-language-model fallback**) plus an event-driven healer that auto-repairs when carrier APIs change. Real-time voice runs through a Rust (axum + tokio) WebSocket service streaming to Deepgram, with PII/PHI redaction in-Rust.
 
-- **Landing page:** [portal-three-rose.vercel.app](https://portal-three-rose.vercel.app)
+- **Live:** [salescoach.axumquant.com](https://salescoach.axumquant.com)
 - **Chrome extension:** [Chrome Web Store →](https://chromewebstore.google.com/detail/sales-coach/oeleifakfnkihkkbeaabgibdoeknnilp)
-- **Status:** Public beta, validating with early-access agencies
+- **Status:** Public beta (v1.9.7), validating with early-access agencies
 - Source: proprietary — commercial product
 
 #### Live shots from a Medicare enrollment session
 
 <img src="./screenshots/hero-coaching-panel.png" alt="Sales Coach v1.8.9 docked beside a SunFire Medicare enrollment portal — live script with phase tracking, call notes, and permission-to-record prompts" />
 
-<sub><b>The coaching panel in action</b> — Sales Coach v1.8.9 docked beside SunFire's Medicare enrollment portal. The live script tracks call phases (Intro → Qualify → Needs → Research → Presentation → Enrollment), while call notes and permission-to-record prompts update in real time.</sub>
+<sub><b>The coaching panel in action</b> — Sales Coach docked beside SunFire's Medicare enrollment portal. The live script tracks call phases (Intro → Qualify → Needs → Research → Presentation → Enrollment), while call notes and permission-to-record prompts update in real time.</sub>
 
 <table>
   <tr>
