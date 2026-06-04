@@ -104,17 +104,23 @@ The reusable building blocks **extracted from the products above** — all origi
 
 **Languages** — Python · Rust · TypeScript · Shell
 
-**AI / Agents** — Multi-agent orchestration · MCP servers · LLM routing (Ollama Cloud, OpenAI, Anthropic) · RAG (Qdrant, Neo4j)
+**AI / Agents** — Pydantic AI · LangGraph · multi-agent orchestration · Model Context Protocol (30+ servers, FastMCP) · LLM routing (Ollama Cloud · OpenAI · Anthropic · Groq) · RAG & memory (Qdrant · Neo4j · Mem0)
 
-**Backend** — FastAPI · async WebSockets · Supabase Postgres · Redis · ClickHouse · Stripe
+**ML / Data** — PyTorch · scikit-learn · XGBoost · LightGBM · Optuna · gplearn · Polars · NumPy / SciPy · CuPy (GPU)
 
-**Browser** — Chrome MV3 · CDP network interception · DOM/selector mapping · VLM fallback
+**Backend** — FastAPI · Pydantic V2 · async WebSockets · gRPC · Alembic · Supabase / Postgres · Redis · ClickHouse · Stripe
 
-**Voice** — Rust (axum + tokio) WebSocket STT · Deepgram · in-Rust PII redaction
+**Rust** — axum · tokio · PyO3 / maturin (native Python extensions) · sqlx · fred · tokio-tungstenite · thirtyfour
 
-**Frontend** — Next.js 16 · Tauri 2 · responsive sidepanel UIs
+**Browser** — Chrome MV3 · CDP network interception · DOM/selector mapping · Playwright · VLM fallback
 
-**Infra** — Nomad · Railway · Cloudflare · Docker · CI/CD automation
+**Voice** — Deepgram (STT) · ElevenLabs (TTS) · Rust WebSocket pipeline · in-Rust PII redaction
+
+**Frontend** — Next.js 16 · React 19 · Tauri 2 (Leptos / WASM) · Prisma · shadcn/ui
+
+**Observability** — Arize Phoenix (LLM tracing) · OpenTelemetry · Sentry · structlog
+
+**Infra / DevOps** — Nomad · Vault · Cloudflare · Docker · Railway · Vercel · GitHub Actions
 
 ---
 
