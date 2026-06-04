@@ -9,47 +9,65 @@ We design and ship multi-agent AI infrastructure where it matters most: producti
 ## Products
 
 ### Sales Coach
-Real-time AI coaching platform for B2B insurance sales. 12 specialized agents deliver sub-800ms coaching cues during live calls — compliance alerts, objection handling, plan matching, and tonality feedback. Self-healing portal integration via three-layer extraction (CDP network interception → accessibility tree → vision-language model fallback).
+Real-time AI coaching platform for B2B insurance sales. **13 specialized agents** deliver live coaching cues — compliance & SOA disclosure tracking, objection handling, plan matching, research, and tonality feedback — under a **sub-800ms end-to-end latency budget**. Self-healing carrier-portal integration: a three-layer perception stack (**CDP network interception → DOM/selector mapping → vision-language-model fallback**) plus an event-driven healer that auto-repairs when carrier APIs change. Real-time voice runs through a Rust (axum + tokio) WebSocket service streaming to Deepgram, with PII/PHI redaction in-Rust.
 
 - **Landing page:** [portal-three-rose.vercel.app](https://portal-three-rose.vercel.app)
 - **Chrome extension:** [Chrome Web Store →](https://chromewebstore.google.com/detail/sales-coach/oeleifakfnkihkkbeaabgibdoeknnilp)
 - **Status:** Public beta, validating with early-access agencies
 - Source: proprietary — commercial product
 
-#### Live shots from a real Medicare enrollment session
+#### Live shots from a Medicare enrollment session
 
-<img src="./screenshots/sidebar.png" alt="Sales Coach sidepanel live during a SunFire enrollment call — ENROLLMENT, SCRIPT, NOTES, PLAN MATCH, RESEARCH, ANCILLARY, REBUTTALS, TONALITY, COMPLIANCE" />
+<img src="./screenshots/hero-coaching-panel.png" alt="Sales Coach v1.8.9 docked beside a SunFire Medicare enrollment portal — live script with phase tracking, call notes, and permission-to-record prompts" />
 
-<sub>**Full coaching sidepanel** — Sales Coach v1.6.0 docked next to SunFire's Medicare enrollment portal. Nine specialized cards (Enrollment, Script, Notes, Plan Match, Research, Ancillary, Rebuttals, Tonality, Compliance) update in real time during the call.</sub>
+<sub><b>The coaching panel in action</b> — Sales Coach v1.8.9 docked beside SunFire's Medicare enrollment portal. The live script tracks call phases (Intro → Qualify → Needs → Research → Presentation → Enrollment), while call notes and permission-to-record prompts update in real time.</sub>
 
 <table>
   <tr>
-    <td width="50%"><img src="./screenshots/card-in-action.png" alt="Automation Lab agent controls — Interview / Pick / Send / Approve / Deny on a Medicare portal" /></td>
-    <td width="50%"><img src="./screenshots/live-script.png" alt="Live script with phase tracking — OPENER, PROBLEM, PRESENTATION, AGITATION, QUALITY — and verbatim opener line" /></td>
+    <td width="50%"><img src="./screenshots/plan-match-research.png" alt="Plan Match and AI Research cards — ranked carrier plans with one-click SOB, agent surfacing supplemental Vision/Dental/Hearing coverage" /></td>
+    <td width="50%"><img src="./screenshots/ancillary-rebuttals.png" alt="Ancillary cross-sell and Rebuttals cards — real-time objection handling with a credibility stack" /></td>
   </tr>
   <tr>
-    <td align="center"><sub><b>Automation Lab</b> — agent-driven actions on a live carrier portal. Interview, Pick, Send, Approve, Deny, Capture, Save as Workflow.</sub></td>
-    <td align="center"><sub><b>Live script</b> with phase tracking. Opener → Problem → Presentation → Agitation → Quality. Verbatim opener rendered for the agent to read.</sub></td>
+    <td align="center"><sub><b>Plan Match + AI Research</b> — ranked carrier plans with one-click SOB, and an agent that surfaces supplemental coverage (Vision, Dental, Hearing) mid-call.</sub></td>
+    <td align="center"><sub><b>Ancillary + Rebuttals</b> — cross-sell prompts and real-time objection handling, from a credibility stack to no-pressure-close scripts.</sub></td>
   </tr>
   <tr>
-    <td width="50%"><img src="./screenshots/interview-mode.png" alt="Interview Mode — agent-led multi-choice questions for workflow configuration" /></td>
-    <td width="50%"><img src="./screenshots/carrier-portal.png" alt="SunFire Medicare portal with Sales Coach debugging banner" /></td>
+    <td width="50%"><img src="./screenshots/compliance-coaching.png" alt="Compliance, Tonality, and Coaching cards — recording-notice tracking, live tonality metrics, real-time coaching cues" /></td>
+    <td width="50%"><img src="./screenshots/card-system.png" alt="Modular card system — Enrollment, Script, Notes, Plan Match, Research, Ancillary, Coaching Cues, Compliance, Rebuttals, Tonality, Psychology, Transcript" /></td>
   </tr>
   <tr>
-    <td align="center"><sub><b>Interview Mode</b> — agent-led multi-choice prompts replace freeform instructions. The agent asks structured questions to configure each new portal workflow.</sub></td>
-    <td align="center"><sub><b>Carrier portal integration</b> — the <code>"Sales Coach" started debugging this browser</code> banner confirms live CDP-level network interception on the Medicare enrollment portal.</sub></td>
+    <td align="center"><sub><b>Compliance + Tonality + Coaching</b> — recording-notice & disclosure tracking, live tonality metrics, and coaching cues delivered as the call unfolds.</sub></td>
+    <td align="center"><sub><b>Modular card system</b> — each specialist agent renders as a card the rep toggles on demand: Enrollment, Script, Notes, Plan Match, Research, Ancillary, Coaching, Compliance, Rebuttals, Tonality, Psychology, Transcript.</sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="./screenshots/ai-training.png" alt="AI roleplay training — practice calls against AI personas that score the rep on discovery, objection handling, compliance, and tonality" /></td>
+    <td width="50%"><img src="./screenshots/diagnostics.png" alt="Built-in diagnostics — Deepgram STT health checks and multi-carrier portal readiness for SunFire, EnrollHere, Heartland, UHOne" /></td>
+  </tr>
+  <tr>
+    <td align="center"><sub><b>AI roleplay training</b> — reps practice against AI personas and get scored on discovery, objection handling, compliance, and tonality before they ever touch a live call.</sub></td>
+    <td align="center"><sub><b>Built-in diagnostics</b> — Deepgram STT health checks and multi-carrier portal readiness (SunFire, EnrollHere, Heartland, UHOne…).</sub></td>
   </tr>
 </table>
 
 ### Axum Labs Trading Platform
-Autonomous quantitative trading infrastructure. Full Rust + Python stack with multi-agent strategy evolution, alternative-data pipelines (satellite imagery, AIS shipping, regime / sentiment classification), and Nomad-orchestrated deployment. 30+ MCP servers and 15+ specialized agents.
+Autonomous quantitative trading infrastructure. Rust + Python: **Rust compute kernels** (PyO3/maturin), **island-model evolutionary strategy discovery**, and a **9-stage statistical validation gauntlet** (walk-forward, Deflated Sharpe, CPCV, Monte-Carlo) that rejects overfit strategies before any capital is risked. **30+ strategy archetypes**, 20+ specialized agents, 30+ MCP servers, and 80+ Nomad jobs; alternative-data pipelines (satellite imagery, AIS shipping, sentiment / regime classification).
 
+- **Architecture overview:** [github.com/axumquant/axum-trading-platform](https://github.com/axumquant/axum-trading-platform)
 - Source: proprietary — commercial product
 
 ### Axum Labs Studio
-Autonomous AI web agency platform. A coordinated agent swarm takes a client brief and delivers a deployed, monitored website end-to-end. Intake agent extracts brand guidelines, browser operator generates designs via headless Playwright, copywriter QA enforces tone, debug engineer validates in sandbox, and MCP deployer ships to Shopify or Wix through a Rust gateway. Four-tiered memory (Postgres, Redis, Mem0/Qdrant, Neo4j) ensures agents learn from every engagement.
+Autonomous AI web agency platform. A coordinated agent swarm takes a client brief and delivers a deployed, monitored website end-to-end. Intake agent extracts brand guidelines, browser operator generates designs via headless Playwright, copywriter QA enforces tone, debug engineer validates in sandbox, and an MCP deployer ships to Shopify or Wix through a Rust gateway. Four-tiered memory (Postgres, Redis, Mem0/Qdrant, Neo4j) lets agents learn from every engagement.
 
+- **Architecture overview:** [github.com/axumquant/axum-labs-studio-overview](https://github.com/axumquant/axum-labs-studio-overview)
 - Source: proprietary — commercial product
+
+### Public Architecture Overviews
+Deep architecture write-ups for the proprietary products above — no source, full design.
+
+| Repo | What's inside |
+|---|---|
+| [**axum-trading-platform**](https://github.com/axumquant/axum-trading-platform) | Hero README + architecture diagram + `docs/ARCHITECTURE.md` — discovery loop, 9-stage validation gauntlet, agent separation-of-powers |
+| [**axum-labs-studio-overview**](https://github.com/axumquant/axum-labs-studio-overview) | README + Engineering Highlights — agent swarm, Rust MCP gateway (Universal Commerce Protocol), four-tier shared memory |
 
 ---
 
@@ -63,6 +81,7 @@ The reusable building blocks underneath the products above. All original work, a
 | [**arch-viewer**](https://github.com/axumquant/arch-viewer) | MCP-native codebase analysis — interactive architecture diagrams, Neo4j knowledge graph, 17 Claude Code tools |
 | [**cdp-network-interceptor**](https://github.com/axumquant/cdp-network-interceptor) | Chrome DevTools Protocol network capture for MV3 extensions — PII redaction, iframe auto-attach, stale-debugger recovery |
 | [**mv3-audio-replay-buffer**](https://github.com/axumquant/mv3-audio-replay-buffer) | Encrypted, durable audio frame buffer for Chrome MV3 service workers — ack-based replay over WebSocket |
+| [**agentic-browser-lab**](https://github.com/axumquant/agentic-browser-lab) | Multi-agent browser automation — Perceiver + Planner + Interviewer agents (Pydantic AI) in a Chrome MV3 extension |
 | [**devkit**](https://github.com/axumquant/devkit) | Universal B2B/SaaS development foundation — skills, hooks, agents, CI/CD templates |
 
 ---
@@ -75,9 +94,11 @@ The reusable building blocks underneath the products above. All original work, a
 
 **Backend** — FastAPI · async WebSockets · Supabase Postgres · Redis · ClickHouse · Stripe
 
-**Browser** — Chrome MV3 · CDP network interception · accessibility-tree crawling · VLM fallback
+**Browser** — Chrome MV3 · CDP network interception · DOM/selector mapping · VLM fallback
 
-**Frontend** — Next.js 15 · Tauri 2 · responsive sidepanel UIs
+**Voice** — Rust (axum + tokio) WebSocket STT · Deepgram · in-Rust PII redaction
+
+**Frontend** — Next.js 16 · Tauri 2 · responsive sidepanel UIs
 
 **Infra** — Nomad · Railway · Cloudflare · Docker · CI/CD automation
 
