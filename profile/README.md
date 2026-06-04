@@ -1,8 +1,22 @@
+<div align="center">
+
 # Axum Labs
 
-> Agentic AI lab building autonomous systems for fintech and real-time B2B sales operations.
+### Agentic AI lab building autonomous systems for fintech &amp; real-time B2B sales
 
-We design and ship multi-agent AI infrastructure where it matters most: production trading systems that compound capital, and live sales workflows that compound revenue. Original work, shipped end-to-end.
+[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](#stack)
+[![Rust](https://img.shields.io/badge/Rust-CE412B?logo=rust&logoColor=white)](#stack)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](#stack)
+[![MCP](https://img.shields.io/badge/MCP-toolchains-0A7EA4)](#stack)
+[![Nomad](https://img.shields.io/badge/HashiCorp-Nomad-00CA8E?logo=nomad&logoColor=white)](#stack)
+
+**[Products](#products)** · **[Architecture Overviews](#public-architecture-overviews)** · **[Open Source](#open-source-infrastructure)** · **[Stack](#stack)** · **[Contact](#contact)**
+
+</div>
+
+---
+
+We design and ship multi-agent AI infrastructure where it matters most: **production trading systems that compound capital, and live sales workflows that compound revenue.** Original work, shipped end-to-end — Rust + Python, from compute kernels to browser extensions.
 
 ---
 
@@ -106,7 +120,12 @@ The reusable building blocks underneath the products above. All original work, a
 
 ## Contact
 
-Norman Beckford — Licensed Medicare Agent who taught himself to build the software his industry wouldn't. Started learning to code in 2018, building on LLMs since 2022.
+**Norman Beckford** — Licensed Medicare Agent who taught himself to build the software his industry wouldn't. Coding since 2018, building on LLMs since 2022.
 
-- n.beck10010@gmail.com
-- [linkedin.com/in/norman-beckford-832711218](https://linkedin.com/in/norman-beckford-832711218)
+<div align="center">
+
+[![Email](https://img.shields.io/badge/Email-n.beck10010%40gmail.com-D14836?logo=gmail&logoColor=white)](mailto:n.beck10010@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Norman_Beckford-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/norman-beckford-832711218)
+[![Live product](https://img.shields.io/badge/Live-salescoach.axumquant.com-7C3AED)](https://salescoach.axumquant.com)
+
+</div>
