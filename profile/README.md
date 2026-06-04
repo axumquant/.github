@@ -87,16 +87,16 @@ Deep architecture write-ups for the proprietary products above — no source, fu
 
 ## Open-Source Infrastructure
 
-The reusable building blocks underneath the products above. All original work, all production-tested.
+The reusable building blocks **extracted from the products above** — all original work, production-tested, each with real browsable source (not just a README).
 
 | Repo | What it is |
 |---|---|
-| [**site-mapper-agents**](https://github.com/axumquant/site-mapper-agents) | LLM-driven self-healing API discovery — Pydantic AI agents (Architect, Eavesdropper, Healer) adapt to schema changes |
-| [**arch-viewer**](https://github.com/axumquant/arch-viewer) | MCP-native codebase analysis — interactive architecture diagrams, Neo4j knowledge graph, 17 Claude Code tools |
-| [**cdp-network-interceptor**](https://github.com/axumquant/cdp-network-interceptor) | Chrome DevTools Protocol network capture for MV3 extensions — PII redaction, iframe auto-attach, stale-debugger recovery |
-| [**mv3-audio-replay-buffer**](https://github.com/axumquant/mv3-audio-replay-buffer) | Encrypted, durable audio frame buffer for Chrome MV3 service workers — ack-based replay over WebSocket |
-| [**agentic-browser-lab**](https://github.com/axumquant/agentic-browser-lab) | Multi-agent browser automation — Perceiver + Planner + Interviewer agents (Pydantic AI) in a Chrome MV3 extension |
-| [**devkit**](https://github.com/axumquant/devkit) | Universal B2B/SaaS development foundation — skills, hooks, agents, CI/CD templates |
+| [**site-mapper-agents**](https://github.com/axumquant/site-mapper-agents) | LLM-*once* API discovery for any browser-accessible portal. Burst-record CDP traffic while you click; a three-agent team (Architect · Eavesdropper · Healer) returns a typed `SiteSchema` + signatures. Extraction is then pure sub-millisecond Pydantic matching — and self-heals when the portal's API shape drifts. |
+| [**agentic-browser-lab**](https://github.com/axumquant/agentic-browser-lab) | Multi-agent browser automation inside a Chrome MV3 extension — no Playwright, no Selenium. Perceiver + Planner + Interviewer agents drive the user's *real logged-in* session and interview the user to configure each new workflow. |
+| [**learned-workflows-marketplace**](https://github.com/axumquant/learned-workflows-marketplace) | "GitHub for AI workflows" — record a browser workflow once, auto-template typed PII into params, store across Postgres (truth) + Qdrant (semantic search) + Neo4j (relationships), version every edit, and opt-in share across tenants. |
+| [**cdp-network-interceptor**](https://github.com/axumquant/cdp-network-interceptor) | Chrome DevTools Protocol capture for MV3 service workers with the footguns solved: cross-origin iframe auto-attach, stale-debugger recovery on SW reload, and built-in PII redaction (SSN · email · phone · MBI · auth headers). |
+| [**mv3-audio-replay-buffer**](https://github.com/axumquant/mv3-audio-replay-buffer) | Encrypted, durable audio frame buffer for MV3 — AES-GCM-256 in IndexedDB, survives service-worker restarts mid-call, ack-trimmed, and replays un-acked frames the moment a WebSocket reconnects. Transport-agnostic. |
+| [**arch-viewer**](https://github.com/axumquant/arch-viewer) | MCP-native codebase analysis — AST → Neo4j knowledge graph, an interactive SVG architecture diagram, and 17 MCP tools any Claude Code / Cursor client can call. Runs fully local, no SaaS. |
 
 ---
 
